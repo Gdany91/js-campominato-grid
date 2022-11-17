@@ -7,6 +7,8 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro e
 const button = document.getElementById('btn');
 const container = document.querySelector('.container');
 
+
+
 for (let i = 1; i < 101; i++) {
     button.addEventListener("click",
     
@@ -17,18 +19,22 @@ for (let i = 1; i < 101; i++) {
         const element = document.createElement('div');
         element.classList.add('square');
         container.append(element);
-        element.append(i)
+        element.append(i);
 
   }
  )
 }
 
- element.addEventListener('click',
+
+ const item = document.getElementsByClassName('square')
+
+ item.addEventListener('click',
     
         function clicked() {
 
-            const item_clicked = document.getElementsByClassName('square');
-            item_clicked.classList.add ('clicked');
+          item.classList.add('clicked')
+        
+          
             
             
         }
