@@ -14,31 +14,19 @@ for (let i = 1; i < 101; i++) {
     
     function onClick(){
 
-            
-            
         const element = document.createElement('div');
         element.classList.add('square');
+        element.addEventListener('click', function () {
+
+            this.classList.add('clicked')
+            console.log(i);
+          })
         container.append(element);
         element.append(i);
 
   }
  )
 }
-
-
- const item = document.getElementsByClassName('square')
-
- item.addEventListener('click',
-    
-        function clicked() {
-
-          item.classList.add('clicked')
-        
-          
-            
-            
-        }
- )
 
 
 
