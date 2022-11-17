@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: wheat;
+    min-height: 100px;
+    margin-top: 60px;
+}
+
+#btn {
+    margin-right: 100px;
+    width:60px ;
+    cursor: pointer;
+}
+
+h1{
+    margin-left: 100px;
+}
+
+.square{
+    width: calc(10% - 10px);
+    background-color: burlywood;
+
+}
