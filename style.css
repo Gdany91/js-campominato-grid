@@ -13,10 +13,11 @@ header {
 
 .container {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     background-color: wheat;
     min-height: 100px;
-    margin-top: 60px;
+    margin: 60px 100px;
 }
 
 #btn {
@@ -30,7 +31,19 @@ h1{
 }
 
 .square{
-    width: calc(10% - 10px);
+    width:calc(10% - 10px) ;
+    height: 100px;
     background-color: burlywood;
+    margin: 2px;
+    cursor: pointer;
+    
 
+}
+
+.clicked{
+    background-color: brown;
+}
+
+.square:hover{
+    opacity: 0.5;
 }
